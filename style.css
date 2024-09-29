@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url(https://files.porsche.com/filestore/galleryimagerwd/multimedia/none/992-gt3-gallery-06/zoom2/807722d8-8d72-11eb-80d4-005056bbdc38;sL;twebp/porsche-zoom2.webp);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    background-color: #9cc5d877;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+
+nav a{
+    height: 100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+nav a:hover{
+    background-color: lightslategrey;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right:  0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: #9cc5d877;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 -10px lightslategrey ;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .container{
+        background-image: url(mobile-size-image.jpg);
+    }
+}
+
+.img{
+    display: flex;
+    margin-right: auto;
+    height: 35px;
+}
+.imgtext{
+    
+    
+    
+      font-family: "Orbitron", sans-serif;
+      
+      
+    
+}
+
+
+
+
+
+
+  

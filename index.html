@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="https://www.porsche.com/middle-east/_india_/">Home</a></li>
+                <li ><a href="https://www.porsche.com/usa/models/taycan/taycan-models/taycan/">Electric</a></li>
+                <li ><a href="https://press.porsche.com/prod/presse_pag/PressResources.nsf/jumppage/pcna-images?OpenDocument&hl=pcna-images">Gallery</a></li>
+                <li ><a href="https://www.porsche.com/usa/dialogue/contactandinformation/">Contact</a></li>
+                <li ><a href="https://www.porsche.com/international/models/911/911-gt3-models/">Details</a></li>
+                <li ><a href="https://www.porsche.com/international/accessoriesandservice/porscheservice/">Service</a></li>
+                
+            </ul>
+        <ul>
+            <img class="img" src="porsche_logo-removebg-preview.png" alt="">
+           
+            <li class="hideOnMobile"><a href="https://www.porsche.com/middle-east/_india_/">Home</a></li>
+            <li class="hideOnMobile"><a href="https://www.porsche.com/usa/models/taycan/taycan-models/taycan/">Electric</a></li>
+            <li class="hideOnMobile"><a href="https://press.porsche.com/prod/presse_pag/PressResources.nsf/jumppage/pcna-images?OpenDocument&hl=pcna-images">Gallery</a></li>
+            <li class="hideOnMobile"><a href="https://www.porsche.com/usa/dialogue/contactandinformation/">Contact</a></li>
+            <li class="hideOnMobile"><a href="https://www.porsche.com/international/models/911/911-gt3-models/">Details</a></li>
+            <li class="hideOnMobile"><a href="https://www.porsche.com/international/accessoriesandservice/porscheservice/">Service</a></li>
+            <li class="menu-button" onclick=showsSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+        </ul>
+    </nav>
+</div>
+  
+    <script>
+        function showsSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display= 'flex'
+            
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+    
+</body>
+</html>
